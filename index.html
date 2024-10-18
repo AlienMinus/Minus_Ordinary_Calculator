@@ -1,14 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <link rel="icon" href="images/MinusCalc.jpg" type="image/jpg">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <link rel="icon" href="images/MinusCalc.jpg" type="image/jpg" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <title>Minus Ordinary Calculator</title>
 </head>
 <body>
     
+    <div id="container">
+        <h3><span id="Eye_Shot">😉</span> _Minus_Ordinary_Calculator_</h3>
+        <section class="input">
+            <input type="text" id="display" placeholder="" disabled />
+        </section>
+        <section class="buttons">
+            <span>
+                <button id="powerBtn" onclick="togglePower()">
+                    <i class="fas fa-power-off"></i>
+                </button>
+            </span>
+            <span><button onclick="clearDisplay()">AC</button></span>
+            <span><button onclick="deleteLast()">DEL</button></span>
+            <span><button onclick="appendToDisplay('(')"> ( </button></span>
+        </section>
+        <section class="buttons">
+            <span><button onclick="appendToDisplay('7')">7</button></span>
+            <span><button onclick="appendToDisplay('8')">8</button></span>
+            <span><button onclick="appendToDisplay('9')">9</button></span>
+            <span><button onclick="appendToDisplay(')')"> ) </button></span>
+        </section>
+        <section class="buttons">
+            <span><button onclick="appendToDisplay('4')">4</button></span>
+            <span><button onclick="appendToDisplay('5')">5</button></span>
+            <span><button onclick="appendToDisplay('6')">6</button></span>
+            <span><button onclick="appendToDisplay('/')">/</button></span>
+        </section>
+        <section class="buttons">
+            <span><button onclick="appendToDisplay('1')">1</button></span>
+            <span><button onclick="appendToDisplay('2')">2</button></span>
+            <span><button onclick="appendToDisplay('3')">3</button></span>
+            <span><button onclick="appendToDisplay('*')">x</button></span>
+        </section>
+        <section class="buttons">
+            <span><button onclick="appendToDisplay('0')">0</button></span>
+            <span><button onclick="appendToDisplay('.')">.</button></span>
+            <span><button onclick="appendToDisplay('+')">+</button></span>
+            <span><button onclick="appendToDisplay('-')">-</button></span>
+        </section>
+        <section class="buttons">
+            <span><button onclick="appendToDisplay('sqrt(')">√</button></span>
+            <span><button onclick="appendToDisplay('**')">^</button></span>
+            <span><button onclick="appendToDisplay('%')">%</button></span>
+            <span><button onclick="calculateResult()">=</button></span>
+        </section>
+        <p><strong>Press Power Button for ON/OFF</strong></p>
+    </div>
 </body>
 </html>

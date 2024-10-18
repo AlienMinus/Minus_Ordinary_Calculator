@@ -1,0 +1,88 @@
+/* Setting the body background color and font */
+body {
+    background-color: #000000; /* Light gray background */
+    font-family: Arial, sans-serif; /* Setting a simple sans-serif font */
+    display: flex; /* Using flexbox for centering */
+    justify-content: center; /* Centering horizontally */
+    align-items: center; /* Centering vertically */
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Removing default margin */
+}
+
+/* Styling the container for the calculator */
+#container {
+    background-color: rgb(249, 182, 0); /* White background for the calculator */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgb(255, 225, 0); /* Adding a shadow effect */
+    padding: 20px; /* Adding padding inside the container */
+    width: 300px; /* Fixed width for the calculator */
+}
+
+/* Styling the input section */
+.input {
+    margin-bottom: 20px; /* Space below the input field */
+}
+
+/* Styling the input field */
+#display {
+    width: 100%; /* Full width */
+    height: 40px; /* Fixed height */
+    font-size: 24px; /* Larger text */
+    text-align: right; /* Aligning text to the right */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners for the input field */
+    padding: 10px; /* Padding inside the input field */
+    box-sizing: border-box; /* Including padding in total width and height */
+}
+
+/* Styling for the off state */
+#display.off {
+    background-color: rgb(186, 164, 164); /* Black background when off */
+    color: transparent; /* Hide text when off */
+}
+
+/* Styling for the button sections */
+section {
+    display: flex; /* Using flexbox for button layout */
+    justify-content: space-between; /* Equal space between buttons */
+    margin-bottom: 10px; /* Space below each section */
+}
+
+/* Styling the buttons */
+button {
+    width: 60px; /* Fixed width for buttons */
+    height: 60px; /* Fixed height for buttons */
+    font-size: 20px; /* Font size for buttons */
+    color: white; /* White text color */
+    background-color: #007BFF; /* Bootstrap primary blue */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+/* Adding hover effects for buttons */
+button:hover {
+    background-color: #000000; /* Darker blue on hover */
+}
+
+/* Specific styles for the clear and delete buttons */
+button:nth-child(1), button:nth-child(2) {
+    background-color: #dc3545; /* Bootstrap danger red */
+}
+
+button:nth-child(1):hover, button:nth-child(2):hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+h3{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+p{
+    font-family: monospace;
+    font-size: small;
+}
+#Eye_Shot{
+    border: 2px solid black;
+    border-radius: 150px;
+}
